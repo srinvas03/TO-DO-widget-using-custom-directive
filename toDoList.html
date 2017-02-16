@@ -1,0 +1,38 @@
+<div class = "container">
+
+        <div class = "row">
+
+          <div class="col-sm-2"></div> <!-- first span -->
+
+          <div class="col-sm-7"> <!-- Second col span starts here -->
+
+            <div class = "panel panel-info"> <!-- panel starts here -->
+
+              <div class = "panel-heading" style = "text-align: center;"> {{title}} <span style = "float: right; marging-top: -10px;" class = "glyphicon glyphicon-bell">{{number}}<span> </div> <!-- Panel heading -->
+
+              <div class = "panel-body"> <!-- panel body starts here -->
+  
+                <div style = "margin-top: 20px; color: #31708f; font-size:'16'; font-size:20px; text-transform: capitalize;" ng-repeat = "item in array1">
+
+                 <div> {{item}} <button style = "float: right;" class = "btn btn-primary" ng-click = "remove(item)"> REMOVE ACTIVITY </button> <hr> </div>
+
+                </div>
+                                
+                <label style = "color: #31708f;" for = "activity"> Activity: </label>
+                
+                <input id = "activity" placeholder = "Enter Your Activity" class = "form-control" type = "text" ng-model = "activity"> </br> </br>
+
+                <input type = "button" class = "btn btn-primary" value = "ADD ACTIVITY" ng-click = "add(activity)">
+
+                                              
+              </div> <!-- panel body ends here -->
+
+            </div> <!-- panel ends here -->
+
+          </div> <!-- Second col span ends here -->
+
+          <div class="col-sm-2"></div>
+
+        </div>
+
+</div>
